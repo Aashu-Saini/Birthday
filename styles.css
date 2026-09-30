@@ -30,3 +30,83 @@ nav { display:flex; justify-content:space-between; align-items:center; position:
 .uploaded-video:fullscreen{width:100vw;height:100vh;background:#000}.uploaded-video:fullscreen video{width:100%;height:177.78%;top:-38.89%;left:0}.photo-frame.new-memory img{animation:memory-zoom .65s cubic-bezier(.2,.75,.25,1)}.photo-frame.new-memory p{animation:memory-line .65s .08s both}@keyframes memory-zoom{from{transform:scale(1.13);filter:brightness(.75) blur(2px)}to{transform:scale(1);filter:brightness(1) blur(0)}}@keyframes memory-line{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 
 .birthday-surprise{position:fixed;z-index:45;inset:0;background:radial-gradient(circle at center,#a85e97cc,#30213df2);display:grid;place-items:center;padding:25px;opacity:0;pointer-events:none;transition:opacity .3s}.birthday-surprise.open{opacity:1;pointer-events:auto}.surprise-card{position:relative;max-width:500px;padding:56px 48px 48px;text-align:center;border-radius:28px;background:linear-gradient(145deg,#fff8eb,#ffe5eb);box-shadow:0 25px 70px #1c102a80;transform:scale(.85) rotate(-3deg);transition:transform .45s cubic-bezier(.2,.8,.2,1)}.birthday-surprise.open .surprise-card{transform:scale(1) rotate(0)}.surprise-stars{color:#e99553;font-size:24px;letter-spacing:4px;margin-bottom:22px;animation:twinkle 1.5s infinite alternate}.surprise-card h2{font-family:"Playfair Display";font-size:clamp(38px,6vw,58px);letter-spacing:-2px;line-height:.98;margin:0}.surprise-card h2 em{color:#ff6e96}.surprise-card p:not(.eyebrow){max-width:360px;margin:24px auto;color:#6d5968;line-height:1.65;font-size:15px}.close-surprise{position:absolute;right:17px;top:11px;border:0;background:transparent;color:#806b79;font-size:29px;cursor:pointer}.again-button{border:0;border-radius:999px;background:#3c2949;color:#fff;padding:13px 20px;font:600 13px "DM Sans";cursor:pointer}.again-button:hover{background:#ff6e96}@keyframes twinkle{to{transform:scale(1.18);opacity:.55}}
+/* ================================
+   PASSWORD SCREEN
+   ================================ */
+
+#password-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background:
+        radial-gradient(circle at top, rgba(255, 210, 225, 0.35), transparent 40%),
+        linear-gradient(135deg, #fff5f8, #ffe4ec);
+}
+
+.password-box {
+    width: min(420px, 100%);
+    padding: 40px 30px;
+    text-align: center;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 20px 60px rgba(120, 40, 70, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.password-box .lock-icon {
+    font-size: 52px;
+    margin-bottom: 12px;
+}
+
+.password-box h2 {
+    margin: 0 0 10px;
+    font-size: 30px;
+}
+
+.password-box p {
+    margin: 0 0 22px;
+}
+
+#site-password {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    border: 1px solid #e7b7c7;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+#site-password:focus {
+    border-color: #d96b91;
+    box-shadow: 0 0 0 3px rgba(217, 107, 145, 0.15);
+}
+
+#unlock-button {
+    width: 100%;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    background: #d96b91;
+    color: white;
+}
+
+#unlock-button:hover {
+    opacity: 0.9;
+}
+
+#password-error {
+    min-height: 20px;
+    margin-top: 12px !important;
+    margin-bottom: 0 !important;
+    color: #c0395a;
+    font-size: 14px;
+}

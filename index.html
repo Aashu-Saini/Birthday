@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ff6b91" />
+    <title>Happy Birthday!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="gift-intro" id="gift-intro" aria-label="Open your birthday surprise">
+      <div class="gift-stars">✦ &nbsp; ♥ &nbsp; ✦</div>
+      <p class="eyebrow">A LITTLE SOMETHING FOR MANISHA</p>
+      <button class="gift-box" id="open-gift" type="button" aria-label="Open birthday surprise"><span class="gift-lid"></span><span class="gift-bow bow-left"></span><span class="gift-bow bow-right"></span><span class="gift-ribbon"></span><span class="gift-tag">open me</span></button>
+      <p class="gift-prompt">Tap the gift to open your surprise</p>
+      <button class="front-music-button" id="front-music-button" type="button">♫ Play Apsara from 3:00</button>
+    </div>
+    <div class="confetti" aria-hidden="true"></div>
+    <main>
+      <section class="hero" aria-labelledby="birthday-title">
+        <nav><span class="brand">celebrate<span>, my love!</span></span><span class="nav-note">A day made for Manisha</span></nav>
+        <div class="hero-copy">
+          <p class="eyebrow">TODAY IS ALL ABOUT YOU, MANISHA</p>
+          <h1 id="birthday-title">Happy<br /><em>Birthday,</em><br />Manisha</h1>
+          <p class="intro">To the one who makes every day feel a little more beautiful — may this year bring you the love, laughter, and magic you deserve.</p>
+          <button class="celebrate-button" id="celebrate" type="button"><span>Make a wish</span><b>✦</b></button>
+        </div>
+        <div class="cake-scene" aria-label="A birthday cake with candles">
+          <div class="sparkle s1">✦</div><div class="sparkle s2">✦</div><div class="sparkle s3">✦</div>
+          <div class="candle c1"><i></i></div><div class="candle c2"><i></i></div><div class="candle c3"><i></i></div><div class="candle c4"><i></i></div><div class="candle c5"><i></i></div>
+          <div class="cake-top"><span></span><span></span><span></span><span></span></div>
+          <div class="cake-mid"><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="cake-base"></div>
+          <div class="plate"></div>
+        </div>
+        <div class="orb orb-one"></div><div class="orb orb-two"></div><div class="ribbon"></div>
+      </section>
+
+      <section class="wishes" aria-labelledby="wish-title">
+        <div class="section-heading"><p class="eyebrow">A LITTLE LOVE FOR YOU</p><h2 id="wish-title">Birthday wishes, <em>from the heart.</em></h2></div>
+        <div class="wish-grid">
+          <button class="wish-card peach" data-wish="Manisha, your smile is my favorite kind of sunshine. I hope this year gives you a thousand reasons to share it."><div class="card-icon">☀</div><h3>More joy</h3><p>For the girl who makes ordinary moments feel golden.<span>Tap to open</span></p></button>
+          <button class="wish-card lavender" data-wish="I hope every dream you carry finds its way to you. I will always be cheering for the incredible person you are."><div class="card-icon">✿</div><h3>Big dreams</h3><p>May your brightest dreams keep unfolding, beautifully.<span>Tap to open</span></p></button>
+          <button class="wish-card yellow" data-wish="Every memory with you is a little more special. Here’s to collecting so many more—one sweet adventure at a time."><div class="card-icon">♡</div><h3>Sweet moments</h3><p>Because every moment is better with you in it.<span>Tap to open</span></p></button>
+        </div>
+      </section>
+
+      <section class="make-wish-section" aria-labelledby="make-wish-title">
+        <div class="wish-orbit orbit-left">♥</div><div class="wish-orbit orbit-right">✦</div>
+        <div class="make-wish-copy"><p class="eyebrow">ONE WISH, JUST FOR HER</p><h2 id="make-wish-title">Make a little wish<br />for <em>Manisha.</em></h2><p>Write something beautiful for her, then send it off with a little bit of magic.</p></div>
+        <form class="wish-form" id="wish-form"><label for="personal-wish">Your birthday wish</label><textarea id="personal-wish" maxlength="220" placeholder="May your smile always find a reason to shine..."></textarea><button type="submit">Send my wish <span>♥</span></button><small class="email-note">Sent with love, right here on this page.</small></form>
+      </section>
+
+      <section class="memories" aria-labelledby="memory-title">
+        <div class="section-heading"><p class="eyebrow">YOUR STORY, IN FRAMES</p><h2 id="memory-title">For all our <em>favorite moments.</em></h2><p class="memory-note">Add Manisha’s photos below — they stay on this device and turn this page into your little memory book.</p></div>
+        <div class="photo-grid" id="photo-grid">
+          <button class="photo-slot tall has-photo" type="button" aria-label="Open memory one"><img src="photos/manisha-01.jpeg" alt="Manisha in a black floral outfit" /></button>
+          <button class="photo-slot has-photo" type="button" aria-label="Open memory two"><img src="photos/manisha-02.jpeg" alt="Manisha in a green saree" /></button>
+          <button class="photo-slot has-photo" type="button" aria-label="Open memory three"><img src="photos/manisha-03.jpeg" alt="Manisha smiling by heart lights" /></button>
+          <button class="photo-slot has-photo" type="button" aria-label="Open memory four"><img src="photos/manisha-04.jpeg" alt="Manisha in traditional attire" /></button>
+          <button class="photo-slot has-photo" type="button" aria-label="Open memory five"><img src="photos/manisha-05.jpeg" alt="Manisha in a red outfit" /></button>
+          <button class="photo-slot has-photo" type="button" aria-label="Open memory six"><img src="photos/manisha-06.jpeg" alt="Manisha in a yellow saree" /></button>
+          <button class="photo-slot has-photo" type="button" aria-label="Open memory seven"><img src="photos/manisha-07.jpeg" alt="Manisha in a red saree" /></button>
+          <button class="photo-slot has-photo" type="button" aria-label="Open memory eight"><img src="photos/manisha-08.jpeg" alt="Manisha in a red saree" /></button>
+          <button class="photo-slot has-photo" type="button" aria-label="Open memory nine"><img src="photos/manisha-09.jpeg" alt="Manisha with flowers" /></button>
+          <button class="photo-slot has-photo" type="button" aria-label="Open memory ten"><img src="photos/manisha-10.jpeg" alt="Manisha in traditional attire with flowers" /></button>
+        </div>
+      </section>
+
+      <section class="video-section" aria-labelledby="video-title">
+        <div class="video-card uploaded-video" id="video-card">
+          <video controls playsinline preload="metadata" poster=""><source src="birthday-wishes.mp4" type="video/mp4" />Your browser does not support this video.</video>
+          <div class="video-caption">A birthday wish, made with love ♥</div>
+        </div>
+        <div class="video-copy"><p class="eyebrow">PRESS PLAY</p><h2 id="video-title">A tiny celebration<br />just for <em>you.</em></h2><p>Turn up the volume, take a breath, and make the birthday wish you’ve been saving.</p></div>
+      </section>
+    </main>
+    <footer>Made with a little extra sparkle <span>✦</span></footer>
+    <div class="wish-flight" id="wish-flight" aria-hidden="true"><span class="flight-spark s-a">✦</span><span class="flight-spark s-b">✦</span><span class="flight-spark s-c">♥</span><span class="paper-plane">➤</span></div>
+    <audio id="intro-song" src="apsara.mpeg" preload="auto" autoplay></audio><audio id="main-song" src="birthday-message.mpeg" preload="auto" loop></audio><div class="music-player"><button id="music-button" type="button">♫ Play song 1</button><button id="switch-music" type="button">⇄ Switch to song 2</button><button id="stop-music" type="button">◼ Stop music</button></div>
+    <div class="toast" id="toast" role="status">Your wish is on its way to the stars! ✨</div>
+    <div class="wish-modal" id="wish-modal" aria-hidden="true"><div class="wish-letter"><button class="close-modal" aria-label="Close message">×</button><div class="letter-heart">♥</div><p class="eyebrow">A LITTLE NOTE FOR YOU</p><p id="wish-text"></p><small>With all my love, always.</small></div></div>
+    <div class="birthday-surprise" id="birthday-surprise" aria-hidden="true">
+      <div class="heart-rain" id="heart-rain" aria-hidden="true"></div>
+      <div class="surprise-card">
+        <button class="close-surprise" aria-label="Close birthday surprise">×</button>
+        <div class="surprise-stars">✦ &nbsp; ✧ &nbsp; ✦</div>
+        <p class="eyebrow">YOUR WISH HAS BEEN SENT</p>
+        <h2>May all your<br /><em>dreams glow,</em><br />Manisha.</h2>
+        <p>May this year bring you soft mornings, exciting adventures, and a love that makes you feel endlessly cherished.</p>
+        <button class="again-button" id="again" type="button">Send more sparkle ✦</button>
+      </div>
+    </div>
+    <div class="photo-memory" id="photo-memory" aria-hidden="true"><div class="heart-rain" id="photo-heart-rain" aria-hidden="true"></div><div class="photo-frame"><button class="close-photo" aria-label="Close photo memory">×</button><img id="memory-image" alt="A treasured memory of Manisha" /><p>Every picture with you is my favorite kind of memory. ♥</p></div></div>
+    <script src="script.js"></script>
+  </body>
+</html>

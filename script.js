@@ -145,3 +145,39 @@ document.querySelector('#open-gift').addEventListener('click', () => {
   setTimeout(() => intro.classList.add('opened'), 650);
   setTimeout(playMainSong, 650);
 });
+/* ================================
+   PASSWORD PROTECTION
+   ================================ */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const passwordScreen = document.getElementById("password-screen");
+    const passwordInput = document.getElementById("site-password");
+    const unlockButton = document.getElementById("unlock-button");
+    const passwordError = document.getElementById("password-error");
+
+    // CHANGE THIS PASSWORD
+    const correctPassword = "Mine Cat";
+
+    function unlockWebsite() {
+        const enteredPassword = passwordInput.value;
+
+        if (enteredPassword === correctPassword) {
+            passwordScreen.style.display = "none";
+            document.body.style.overflow = "";
+        } else {
+            passwordError.textContent = "Incorrect password ❤️";
+            passwordInput.value = "";
+            passwordInput.focus();
+        }
+    }
+
+    unlockButton.addEventListener("click", unlockWebsite);
+
+    passwordInput.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            unlockWebsite();
+        }
+    });
+
+    passwordInput.focus();
+});
